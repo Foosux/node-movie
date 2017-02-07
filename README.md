@@ -15,7 +15,7 @@ clone项目后执行以下命令下载依赖包
 启动前需先在本地启动mongobd，并确保路径和端口号匹配
 
 	node app.js
-	PROT=5000 node app.js   // 修改启动端口号
+	PORT=5000 node app.js   // 修改启动端口号
 
 ## 3.教程中的坑
 ### mongoose.connect('mongodb://127.0.0.1:12345/movie')
