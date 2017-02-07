@@ -1,3 +1,7 @@
+/**
+ * mongodb的骨架 schemas层
+ * @type {抽象层，不能直接操作数据库}
+ */
 var mongoose = require('mongoose')
 
 var MovieSchema = new mongoose.Schema({

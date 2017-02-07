@@ -1,11 +1,12 @@
+//- 模板继承的使用 （extends、block）
+//- 视频模块的引入
 extends ../layout
 
 block content
   .container
     .row
       .col-md-7
-        123
-        //- embed(src="#{movie.flash}", allowFullScreen="true", quality="hight", width="720", height="600", align="middle", type="application/x-shockwave-flash")
+        embed(src="#{movie.flash}", allowFullScreen="true", quality="hight", width="720", height="600", align="middle", type="application/x-shockwave-flash")
       .col-md-5
         dl.dl-horizontal
           dt 电影名字：
