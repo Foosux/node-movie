@@ -166,7 +166,7 @@ app.get('/admin/list',function(req,res) {
   //     summary: '好看！大片！',
   //     language:'chinese'
   //   }]
-  // })
+  })
 
   // 配置路由 删除数据
   app.delete('/admin/list', function(req, res) {
