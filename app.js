@@ -166,19 +166,19 @@ app.get('/admin/list',function(req,res) {
   //     summary: '好看！大片！',
   //     language:'chinese'
   //   }]
-  })
+})
 
-  // 配置路由 删除数据
-  app.delete('/admin/list', function(req, res) {
-    var id = req.query.id
+// 配置路由 删除数据
+app.delete('/admin/list', function(req, res) {
+  var id = req.query.id
 
-    if (id) {
-      Movie.remove({_id: id}, function(err, movie) {
-        if (err) {
-          console.log(err)
-        } else {
-          res.json({success: 1})
-        }
-      })
-    }
-  })
+  if (id) {
+    Movie.remove({_id: id}, function(err, movie) {
+      if (err) {
+        console.log(err)
+      } else {
+        res.json({success: 1})
+      }
+    })
+  }
+})
